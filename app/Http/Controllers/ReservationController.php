@@ -82,6 +82,8 @@ class ReservationController extends Controller
             ], 404);
         }
 
+        $reservation->car;
+
         return response()->json($reservation, 200);
     }
 
