@@ -14,6 +14,9 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         
+        //log username and password in console
+        // dd($request->all());
+        
         $validator = Validator::make($request->all(), [
             'username' => 'required|string',
             'password' => 'required|string',
